@@ -1,0 +1,961 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reglas globales 
+ 	de etiqueta */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-size: auto;
+  margin: auto;
+  overflow-x: hidden !important;
+}
+
+h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #36b5f3;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+a {
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 1.5rem;
+}
+
+/* Reglas globales
+	de clase / componentes */
+.contenedornav {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.contenido {
+  padding: 1.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cabeceralogo {
+  align-items: center;
+}
+
+.cabeceralogo-web {
+  display: none;
+}
+
+.menuprincipal ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-start;
+  z-index: 10;
+  width: 100%;
+}
+
+.ocultar {
+  display: none;
+}
+
+.menuprincipal {
+  display: flex;
+}
+
+.menuprincipal li {
+  display: inline-block;
+  color: #0a1940;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuprincipal a {
+  text-decoration: none;
+}
+
+hr {
+  width: 293px;
+  background-color: #36b5f3;
+  padding: 0.5px;
+  margin-left: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem;
+  background: rgb(255, 255, 255);
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalOpen {
+  opacity: 1;
+  transition: opacity 400ms ease-in;
+  pointer-events: auto;
+}
+
+.spacer-mobile {
+  min-width: 110px;
+  height: 1rem;
+}
+
+.spacer-web {
+  visibility: hidden;
+}
+
+.botondonar {
+  background-color: #36b5f3;
+  border-radius: 6px;
+  padding: 0.5em 1em 0.5em 1em;
+  color: white;
+}
+
+.menu-hamburguesa {
+  width: 40px;
+  background: none;
+  color: white;
+  border: none;
+}
+
+.button {
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.backicon {
+  width: 40px;
+  background: none;
+  color: #0a1940;
+  border: none;
+}
+.menu-nav-web {
+  display: none;
+}
+
+.imagen-footer {
+  background-image: url(./img/newsmobile.png);
+  background-repeat: no-repeat;
+  height: 324px;
+}
+
+.contenedorfooter-mobile,
+.newsletter-mobile {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  gap: 10px;
+  background-color: #0a1940;
+  color: white;
+}
+.contenedorfooter-web {
+  display: none;
+}
+
+.newsletter-web {
+  display: none;
+}
+
+.registro {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+}
+
+.input-registro {
+  width: 65%;
+  margin: 0 2.5%;
+  height: 1.5rem;
+  padding-left: 10px;
+}
+
+.boton-registro {
+  width: 25%;
+  height: 1.5rem;
+  background-color: #101b33;
+  border-width: 0;
+  margin: 0 2.5%;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+}
+
+.subtitle {
+}
+
+.container {
+}
+
+/* Reglas de clase específicas */
+.primerback {
+  display: flex;
+  padding-top: 476px;
+  justify-content: center;
+}
+
+.texto {
+  max-width: 350px;
+}
+
+/* conocenos */
+.imagen-nav-conocenos {
+  background-image: url(./img/bannerconocenos_mobile.png);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-size: 100% auto;
+}
+.conteiner-nav-mobile {
+  padding: 1.5rem;
+  padding-top: 300px;
+  color: white;
+  width: 360px;
+}
+.oceantextos,
+.recuperaciontextos {
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+.text-container-and-image.recuperacion-residuos {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.imagenocean-challenge-web,
+.imagen-recuperacion-web {
+  display: none;
+}
+
+.text-container-and-image.oceanchallenge {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.parrafo-gris {
+  color: #636363;
+  line-height: 150%;
+}
+.parrafo-gris.recuperacion {
+  margin-bottom: 1.5rem;
+}
+.items-parrafo {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.texto-items {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: #636363;
+  line-height: 150%;
+}
+.botonleermas {
+  border-radius: 6px;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #0c163b;
+  border: 1px solid #0c163b;
+}
+.tituloconocenos {
+  color: #1c388e;
+  font-size: 26px;
+}
+.containermision {
+  margin-top: 1.5rem;
+}
+.card-text-and-image,
+.container-equipo {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.containermision {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  gap: 20px;
+}
+.tituloconocenos.centrado {
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+}
+.mision {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a1940;
+  align-items: center;
+}
+.mision-imagen {
+  line-height: 0;
+}
+.mision-imagen2 {
+  display: none;
+}
+.containermision-contenido {
+  background-color: #0a1940;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  width: 242px;
+}
+.titulo-contenido {
+  font-size: 20px;
+}
+.parrafo-contenido {
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+.botonleermas.blanco {
+  color: white;
+  border: 1px solid white;
+}
+.container-cajaequipos {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+}
+.caja1 {
+  display: flex;
+  flex-direction: column;
+}
+.equipo1 {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  margin-bottom: 1.5rem;
+}
+.equipo-imagen {
+  width: 90%;
+}
+.nombre {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: #636363;
+  font-weight: bold;
+}
+.cargo {
+  padding-top: 0;
+}
+.imagen-footerconocenos {
+  background-image: url(./img/imagenfooterconocenos-05.png);
+  background-repeat: no-repeat;
+  height: 361px;
+  background-size: 100% auto;
+}
+.newsletter-web-inside.conocenos {
+  display: none;
+}
+/* Campañas */
+.imagen-nav-campañas {
+	background-image: url(./img/banner_mobile_campañas.png);
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+  background-size: 100% auto;
+}
+.conteiner-nav-mobile.campañas {
+	padding-top: 75px;
+  max-width: 400px;
+}
+.campaigns-click {
+	color: #636363;
+	font-size: 14px;
+}
+.detalle-campaigns {
+	margin-top: 1.5rem;
+}
+.imagen-campaigns {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+	
+}
+.imagen-campaign-container{
+	background-repeat: no-repeat;
+	width: 66px;
+	height: 66px;
+}
+
+.imagen-campaign1 {
+	background-image: url(./img/campanasmobile1.png);
+}
+.imagen-campaign2 {
+	background-image: url(./img/campanasmobile2.png);
+}
+.imagen-campaign3 {
+	background-image: url(./img/campanasmobile3.png);
+
+}
+.parrafo-gris.campaign-playa {
+	margin-bottom: 1.5rem;
+}
+.imagen-lateral2 {
+	background-image: url(./img/peces.png);
+	background-repeat: no-repeat;
+	width: 278px;
+	height: 148px;
+	padding-top: 0;
+}
+.text-container-and-image.recuperacion-residuos.eventos-limpieza {
+	padding-top: 0;
+
+}
+.recuperaciontextos, .oceantextos {
+  max-width: 768px;
+}
+.imagen-lateral1 {
+	background-image: url(./img/imagenlateral2mobile.png);
+	background-repeat: no-repeat;
+	width: 278px;
+	height: 148px;
+}
+.newsletter-web-inside-box-campañas {
+  display: none;
+}
+/* SALVA AL DUGONGO */
+.parrafo-gris.campañadugongo {
+	margin-bottom: 1.5rem;
+}
+.text-container-and-image.recuperacion-residuos.campaña-dugongo{
+	padding-top: 1.5rem;
+}
+.imagen-lateral2.dugongo {
+	background-image: url(./img/imagenlateraldugongomobile.png);
+	width: 400px;
+}
+/* donaciones */
+.imagen-nav-donaciones {
+  background-image: url(./img/bannermobile_donaciones.png);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-size: 100% auto;
+}
+.conteiner-botones-donaciones{
+  display: flex;
+  margin: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+
+
+}
+.caja-1, .caja-2, .caja-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+} 
+.espacio {
+  opacity: 0;
+}
+
+.botondonar.blanco {
+  color: #636363;
+  background-color: white;
+}
+.contador {
+margin: 9rem 1.5rem 2rem 1.5rem;
+align-items: center;
+text-align: center;
+}
+.titulocontador {
+  font-weight: 800;
+  color: #0a1940;
+  font-size: 30PX;
+}
+.bajada-contador {
+  letter-spacing: 0.1rem;
+  font-size: 14px;
+}
+
+/* Media queries */
+/* @media (min-width: 428px) {
+  .imagen-nav-conocenos {
+    background-image: url(./img/navconocenos_770.png);
+  }
+  .conteiner-nav-mobile {
+    padding-top: 213px;
+  }
+  .imagen-footerconocenos {
+    background-image: url(./img/imagenfooterconocenos_707.png);
+  }
+} */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+  }
+
+  a {
+  }
+
+  p {
+  }
+
+  .cabeceralogo {
+    display: none;
+  }
+
+  .cabeceralogo-web {
+    display: block;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .spacer-mobile {
+    display: none;
+  }
+
+  .spacer-web {
+    visibility: visible;
+    width: 160px;
+    min-height: 1rem;
+  }
+  .modal {
+    top: 20px;
+    right: 20px;
+    width: 370px;
+    height: 500px;
+    bottom: unset;
+    left: unset;
+  }
+  .imagen-footer {
+    display: none;
+  }
+
+  .newsletter-mobile {
+    display: none;
+  }
+  .newsletter-web {
+    display: block;
+    background-image: url(./img/newsweb.png);
+    height: 470px;
+    padding: 1.5rem;
+  }
+  .newsletter-web-inside-box {
+    width: 80%;
+    text-align: left;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .h3-newsletter-web,
+  .p-newsletter-web {
+    margin-bottom: 20px;
+    width: 80%;
+    color: white;
+  }
+  .registro {
+    height: 4.5rem;
+  }
+  .p-newsletter-web {
+    font-size: 22px;
+  }
+  .input-registro,
+  .boton-registro {
+    font-size: 20px;
+    height: 2.5rem;
+  }
+  .contenedorfooter-mobile {
+    display: none;
+  }
+  .contenedorfooter-web {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0a1940;
+    color: white;
+  }
+  .logo-footer-web {
+    margin-top: 5px;
+  }
+  .contenedor-footer-web-superior {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    line-height: 200%;
+  }
+
+  .contenedor-footer-web-superior > div > h3 {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .contenedor-footer-web-superior > div > ul > li {
+    font-size: 12px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    list-style: none;
+  }
+  .contenedor-footer-web-inferior {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #0a1940;
+  }
+  .newsletter-webconocenos {
+    background-image: url(./img/imagenfooterconocenos_web.png);
+    padding: 1.5rem;
+    background-repeat: no-repeat;
+  }
+  .newsletter-web-inside.conocenos {
+    display: flex;
+    padding-top: 300px;
+    flex-direction: column;
+  }
+  .newsletter-web {
+    background-image: url(./img/imagenfooterconocenos_web2-06.png);
+    height: 560px;
+  }
+  .imagen-footerconocenos {
+    display: none;
+  }
+  .newsletter-web-inside-box {
+    padding-top: 290px;
+  }
+
+  .container-cajaequipos {
+    overflow: unset;
+    padding: 1rem;
+  }
+  .equipo1 {
+    width: 250px;
+  }
+  .containermision {
+    display: flex;
+    padding: 1.5rem;
+    overflow: unset;
+  }
+  .text-container-and-image.oceanchallenge {
+    flex-direction: row;
+  }
+  .oceantextos,
+  .recuperaciontextos {
+    padding-top: 0;
+  }
+  .text-container-and-image.recuperacion-residuos.conocenosipad {
+    padding-top: 15rem;
+  }
+  .conteiner-nav-mobile{
+    padding-top: 212px;
+  }
+  .tituloconocenos {
+    font-size: 22px;
+  }
+  .text-container-and-image.recuperacion-residuos {
+    flex-direction: row-reverse;
+    padding-top: 19rem;
+  }
+  .imagen-nav-conocenos {
+    background-image: url(./img/navconocenos_tablet-06-06.png);
+  }
+  .conteiner-nav-mobile {
+    width: 586px;
+  }
+  .imagen-lateral1 {
+	background-image: url(./img/imagenlateral2tablet.png);
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 800px;
+}
+  .imagen-lateral2 {
+	background-image: url(./img/imagenlateraltablet.png);
+	background-repeat: no-repeat;
+	height: 303px;
+	width: 800px;
+}
+.imagen-nav-campañas {
+	background-image: url(./img/navcampañas_tablet.png);
+  background-size: 100% auto;
+	
+	
+}
+.conteiner-nav-mobile.campañas {
+	padding-top: 93px;
+}
+.imagen-lateral2.dugongo {
+	background-image: url(./img/imagenlateraldugongotablet.png);
+	width: 744px;
+}
+.text-container-and-image.recuperacion-residuos.campaña-dugongo{
+	padding-top: 9rem;
+}
+.newsletter-web-inside-box-campañas {
+  width: 80%;
+  display: unset;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 1.5rem;
+}
+.imagen-newsweb-campañas {
+  background-image: url(./img/imagenfooterconocenos_web9.png);
+  height: 272px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.newsletter-web-campañas {
+  background-color: #0a1940;
+  padding: 1.5rem;
+}
+.imagen-nav-donaciones {
+  background-image: url(./img/bannerdonaciones_tablet.png);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-size: 100% auto;
+}
+.conteiner-botones-donaciones {
+  align-items: flex-end;
+  margin-top: 0;
+  gap: 30px;
+}
+  
+.titulocontador {
+  font-size: 40px;
+}
+.botondonar.blanco {
+  font-size: 22px;
+}
+.bajada-contador {
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+}
+}
+
+@media (min-width: 960px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+  }
+
+  a {
+  }
+
+  p {
+    font-size: 22px;
+  }
+  .texto-items {
+    font-size: 22px;
+  }
+  .newsletter-web {
+    background-image: url(./img/newsletterweb-04-04.png);
+    height: 456px;
+    padding: 1.5rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .menu-hamburguesa {
+    display: none;
+  }
+  .menu-nav-web {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-nav-web li {
+    list-style: none;
+    margin-left: 25px;
+  }
+  .menu-nav-web a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+  }
+  .imagen-nav-conocenos {
+    background-image: url(./img/Navconocenos_web.png);
+  }
+  .conteiner-nav-mobile {
+    padding: 300px 0 0 3rem;
+  }
+  .text-container-and-image.recuperacion-residuos {
+    padding-top: 45rem;
+    gap: 30px;
+    margin: auto;
+  }
+  .text-container-and-image.oceanchallenge {
+    margin-top: 6rem;
+    gap: 50px;
+  }
+  .oceantextos,
+  .recuperaciontextos {
+    width: 600px;
+  }
+  .imagenocean-challenge-mobile,
+  .imagen-recuperacion-mobile {
+    display: none;
+  }
+  .imagenocean-challenge-web,
+  .imagen-recuperacion-web {
+    display: unset;
+  }
+  .oceantextos .recuperaciontextos {
+    width: 560px;
+    padding: 0 4rem;
+  }
+
+  .text-container-and-image.oceanchallenge,
+  .text-container-and-image.recuperacion-residuos {
+    justify-content: center;
+  }
+  .containermision {
+    justify-content: center;
+    gap: 40px;
+    margin-top: 0;
+  }
+  .mision-imagen2 {
+    display: unset;
+  }
+  .mision-imagen {
+    display: none;
+  }
+  .equipo1 {
+    margin-bottom: 2rem;
+    width: 300px;
+    gap: 20px;
+  }
+  .container-cajaequipos {
+    justify-content: space-evenly;
+  }
+  .equipo-imagen {
+    width: 100%;
+  }
+  .nombre {
+    font-size: 22px;
+  }
+  .cargo {
+    font-size: 22px;
+  }
+  
+  .text-container-and-image.recuperacion-residuos.conocenosipad {
+    padding-top: 32rem;
+}
+  .newsletter-web-inside-box {
+    padding-top: 166px;
+  }
+  .card-text-and-image {
+    margin-top: 4rem;
+  }
+  .imagen-lateral2 {
+	background-image: url(./img/imagenlateralweb.png);
+	background-repeat: no-repeat;
+	height: 361px;
+	width: 1270px;
+}
+.imagen-lateral1 {
+	background-image: url(./img/imagenlateralweb1.png);
+	background-repeat: no-repeat;
+	height: 361px;
+	width: 1270px;
+}
+.imagen-nav-campañas {
+	background-image: url(./img/navcampañas_web.png);
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+  background-size: 100% auto;
+}
+
+.conteiner-nav-mobile.campañas {
+	padding-top: 300px;
+  max-width: 600px;
+}
+.imagen-lateral2.dugongo {
+	background-image: url(./img/imagenlateraldugongoweb.png);
+	width: 1390px;
+}
+.imagen-newsweb-campañas {
+  height: 529px;
+}
+.imagen-nav-donaciones {
+  background-image: url(./img/bannerweb_donaciones.png);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-size: 100% auto;
+}
+.contador {
+  margin: 31rem 1.5rem 7rem 1.5rem;
+}
+.bajada-contador {
+  font-size: 26px;
+  letter-spacing: 0.1rem;
+}
+}

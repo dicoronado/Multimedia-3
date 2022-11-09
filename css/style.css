@@ -1,0 +1,45 @@
+/* Reset CSS */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Reglas globales 
+ 	de etiqueta */
+
+body{
+	/* Herencia */
+}
+
+h1{}
+h2{}
+h3{}
+h4{}
+a{}
+
+
+/* Reglas globales
+	de clase / componentes */
+.button{
+
+}
+.title{
+
+}
+.subtitle{
+
+}
+.container{
+
+}
+.navbar{
+
+}
+.footer{
+
+}
+
+/* Reglas de clase específicas */
+
+/* Media queries */
